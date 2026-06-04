@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Energias no Campo - Seu portal de notícias sobre energias renováveis no meio rural brasileiro">
+    <meta name="keywords" content="energia renovável, energia solar, energia eólica, biomassa, biogás, agronegócio, sustentabilidade">
+    <title>Energias no Campo | Portal de Energias Renováveis</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span class="logo__icon">☀</span>
+                <span class="logo__text">Energias <span class="logo__highlight">no Campo</span></span>
+            </a>
+
+            <!-- Navegação Desktop -->
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link nav__link--active">Início</a></li>
+                    <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#categorias" class="nav__link">Categorias</a></li>
+                    <li class="nav__item"><a href="#noticias" class="nav__link">Notícias</a></li>
+                    <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Controles do Header -->
+            <div class="header__controls">
+                <!-- Botão Dark Mode -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <span class="theme-toggle__icon theme-toggle__icon--light">🌙</span>
+                    <span class="theme-toggle__icon theme-toggle__icon--dark">☀</span>
+                </button>
+
+                <!-- Menu Hambúrguer -->
+                <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <div class="container hero__container">
+            <div class="hero__content">
+                <span class="hero__tag">Destaque</span>
+                <h1 class="hero__title">Energias Renováveis: O Futuro Sustentável do Campo Brasileiro</h1>
+                <p class="hero__subtitle">Descubra como a energia solar, eólica, biomassa e biogás estão transformando a agricultura e garantindo um futuro mais verde para o agronegócio nacional.</p>
+                <div class="hero__meta">
+                    <span class="hero__date">📅 04 de Junho, 2026</span>
+                    <span class="hero__read">⏱ 8 min de leitura</span>
+                </div>
+                <a href="#noticias" class="btn btn--primary">Ler Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== INTRODUÇÃO ========== -->
+    <section class="intro" id="sobre">
+        <div class="container">
+            <div class="intro__grid">
+                <div class="intro__content">
+                    <span class="section-tag">Sobre Energias Renováveis</span>
+                    <h2 class="section-title">O que são Energias Renováveis?</h2>
+                    <p class="intro__text">
+                        Energias renováveis são formas de geração de energia que utilizam recursos naturais capazes de se regenerar naturalmente, como o sol, o vento, a água e a biomassa. Diferentemente dos combustíveis fósseis, elas produzem menos poluição e contribuem para a sustentabilidade do planeta.
+                    </p>
+                    <p class="intro__text">
+                        No meio rural, elas ajudam a <strong>reduzir custos</strong>, <strong>aumentar a produtividade</strong> e <strong>diminuir os impactos ambientais</strong>. A utilização dessas fontes vem crescendo cada vez mais na agricultura brasileira, especialmente no Paraná, onde programas de incentivo têm estimulado a instalação de sistemas solares e de biogás em propriedades rurais.
+                    </p>
+                </div>
+                <div class="intro__stats">
+                    <div class="stat-card">
+                        <span class="stat-card__icon">☀</span>
+                        <span class="stat-card__number">83%</span>
+                        <span class="stat-card__label">Matriz Energética Renovável no Brasil</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card__icon">🌱</span>
+                        <span class="stat-card__number">40%</span>
+                        <span class="stat-card__label">Redução nos Custos de Energia</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card__icon">🌿</span>
+                        <span class="stat-card__number">2M+</span>
+                        <span class="stat-card__label">Propriedades com Energia Solar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CATEGORIAS ========== -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <span class="section-tag section-tag--center">Explore por Categoria</span>
+            <h2 class="section-title section-title--center">Tipos de Energia Renovável</h2>
+            
+            <div class="categories__grid">
+                <!-- Energia Solar -->
+                <article class="category-card" data-category="solar">
+                    <div class="category-card__icon">☀</div>
+                    <h3 class="category-card__title">Energia Solar</h3>
+                    <p class="category-card__desc">Produzida através da luz do sol captada por painéis fotovoltaicos.</p>
+                    <div class="category-card__tags">
+                        <span class="tag tag--pro">✓ Baixa manutenção</span>
+                        <span class="tag tag--pro">✓ Fonte limpa</span>
+                    </div>
+                </article>
+
+                <!-- Energia Eólica -->
+                <article class="category-card" data-category="eolica">
+                    <div class="category-card__icon">💨</div>
+                    <h3 class="category-card__title">Energia Eólica</h3>
+                    <p class="category-card__desc">Gerada pela força dos ventos através de aerogeradores.</p>
+                    <div class="category-card__tags">
+                        <span class="tag tag--pro">✓ Sem poluentes</span>
+                        <span class="tag tag--pro">✓ Inesgotável</span>
+                    </div>
+                </article>
+
+                <!-- Biomassa -->
+                <article class="category-card" data-category="biomassa">
+                    <div class="category-card__icon">🌾</div>
+                    <h3 class="category-card__title">Biomassa</h3>
+                    <p class="category-card__desc">Utiliza resíduos agrícolas, madeira e dejetos para gerar energia.</p>
+                    <div class="category-card__tags">
+                        <span class="tag tag--pro">✓ Aproveita resíduos</span>
+                        <span class="tag tag--pro">✓ Gera fertilizantes</span>
+                    </div>
+                </article>
+
+                <!-- Biogás -->
+                <article class="category-card" data-category="biogas">
+                    <div class="category-card__icon">🔥</div>
+                    <h3 class="category-card__title">Biogás</h3>
+                    <p class="category-card__desc">Produzido pela decomposição de resíduos orgânicos em biodigestores.</p>
+                    <div class="category-card__tags">
+                        <span class="tag tag--pro">✓ Reduz gases</span>
+                        <span class="tag tag--pro">✓ Gera eletricidade</span>
+                    </div>
+                </article>
+
+                <!-- Sustentabilidade -->
+                <article class="category-card" data-category="sustentabilidade">
+                    <div class="category-card__icon">🌍</div>
+                    <h3 class="category-card__title">Sustentabilidade</h3>
+                    <p class="category-card__desc">Práticas que conservam recursos e reduzem impactos ambientais.</p>
+                    <div class="category-card__tags">
+                        <span class="tag tag--pro">✓ Menos carbono</span>
+                        <span class="tag tag--pro">✓ Conservação</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEED DE NOTÍCIAS ========== -->
+    <section class="news-feed" id="noticias">
+        <div class="container">
+            <span class="section-tag">Últimas Notícias</span>
+            <h2 class="section-title">Fique por Dentro</h2>
+            
+            <!-- Grid de Notícias - Renderizado via JavaScript -->
+            <div class="news-grid" id="news-grid">
+                <!-- Os cards serão inseridos dinamicamente pelo JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BENEFÍCIOS ========== -->
+    <section class="benefits">
+        <div class="container">
+            <span class="section-tag section-tag--center">Vantagens</span>
+            <h2 class="section-title section-title--center">Benefícios para o Campo</h2>
+            
+            <div class="benefits__grid">
+                <div class="benefit-item">
+                    <span class="benefit-item__icon">💰</span>
+                    <h4 class="benefit-item__title">Redução de Custos</h4>
+                    <p class="benefit-item__text">Diminuição significativa nos gastos com energia elétrica e combustíveis.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-item__icon">⚡</span>
+                    <h4 class="benefit-item__title">Independência Energética</h4>
+                    <p class="benefit-item__text">Autonomia na geração de energia para a propriedade rural.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-item__icon">🌱</span>
+                    <h4 class="benefit-item__title">Preservação Ambiental</h4>
+                    <p class="benefit-item__text">Menor impacto no meio ambiente e redução da pegada de carbono.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-item__icon">📈</span>
+                    <h4 class="benefit-item__title">Competitividade</h4>
+                    <p class="benefit-item__text">Aumento da competitividade no mercado agrícola nacional e internacional.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-item__icon">👥</span>
+                    <h4 class="benefit-item__title">Geração de Empregos</h4>
+                    <p class="benefit-item__text">Criação de oportunidades de trabalho e renda nas comunidades rurais.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-item__icon">♻</span>
+                    <h4 class="benefit-item__title">Aproveitamento de Resíduos</h4>
+                    <p class="benefit-item__text">Transformação de resíduos agrícolas e pecuários em energia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA / NEWSLETTER ========== -->
+    <section class="newsletter" id="contato">
+        <div class="container">
+            <div class="newsletter__content">
+                <h2 class="newsletter__title">Receba Novidades</h2>
+                <p class="newsletter__text">Inscreva-se e fique por dentro das últimas notícias sobre energias renováveis no campo.</p>
+                <form class="newsletter__form" id="newsletter-form">
+                    <input type="email" class="newsletter__input" placeholder="Digite seu e-mail" required>
+                    <button type="submit" class="btn btn--primary">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Coluna 1 - Sobre -->
+                <div class="footer__col">
+                    <a href="#" class="logo logo--footer">
+                        <span class="logo__icon">☀</span>
+                        <span class="logo__text">Energias<span class="logo__highlight">no Campo</span></span>
+                    </a>
+                    <p class="footer__about">
+                        Seu portal de informações sobre energias renováveis no meio rural brasileiro. Promovendo a sustentabilidade e o futuro verde do agronegócio.
+                    </p>
+                </div>
+
+                <!-- Coluna 2 - Links Rápidos -->
+                <div class="footer__col">
+                    <h4 class="footer__title">Links Rápidos</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 - Categorias -->
+                <div class="footer__col">
+                    <h4 class="footer__title">Categorias</h4>
+                    <ul class="footer__links">
+                        <li><a href="#categorias">Energia Solar</a></li>
+                        <li><a href="#categorias">Energia Eólica</a></li>
+                        <li><a href="#categorias">Biomassa</a></li>
+                        <li><a href="#categorias">Biogás</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4 - Contato -->
+                <div class="footer__col">
+                    <h4 class="footer__title">Contato</h4>
+                    <ul class="footer__contact">
+                        <li>📧 mayla.peixoto@escola.pr.gov.br</li>
+                        <li>📞 (00) 99999-0000</li>
+                        <li>📍 Curitiba, Paraná - Brasil</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Energias no Campo. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Mayla para um futuro sustentável.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
